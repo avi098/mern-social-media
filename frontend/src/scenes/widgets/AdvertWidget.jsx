@@ -1,6 +1,8 @@
 import { Typography, useTheme } from "@mui/material";
 import FlexBetween from "components/FlexBetween";
 import WidgetWrapper from "components/WidgetWrapper";
+import QRCode from 'qrcode.react';
+
 
 const AdvertWidget = () => {
   const { palette } = useTheme();
@@ -12,24 +14,23 @@ const AdvertWidget = () => {
     <WidgetWrapper>
       <FlexBetween>
         <Typography color={dark} variant="h5" fontWeight="500">
-          Sponsored
+          Scan It
         </Typography>
-        <Typography color={medium}>Create Ad</Typography>
+        <Typography color={medium}>Connectify</Typography>
       </FlexBetween>
-      <img
-        width="100%"
-        height="auto"
-        alt="advert"
-        src="http://localhost:3001/assets/info4.jpeg"
-        style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
-      />
+      <QRCode
+       value="http://localhost:3000/home"
+       size={230}
+       level="H"
+       bgColor="#fffff8"
+       fgColor="#333333"
+       />
       <FlexBetween>
-        <Typography color={main}>MikaCosmetics</Typography>
-        <Typography color={medium}>mikacosmetics.com</Typography>
+        <Typography color={main}>Profile</Typography>
+        <Typography color={medium}>Connectify.com</Typography>
       </FlexBetween>
       <Typography color={medium} m="0.5rem 0">
-        Your pathway to stunning and immaculate beauty and made sure your skin
-        is exfoliating skin and shining like light.
+        Scan your QR Code and profile will be displayed in any application
       </Typography>
     </WidgetWrapper>
   );

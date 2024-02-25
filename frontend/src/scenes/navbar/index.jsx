@@ -56,7 +56,13 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          <img
+              src="https://cdn-icons-png.flaticon.com/128/14988/14988916.png"
+              alt="Bootstrap"
+              width="30"
+              height="24"
+            />
+          Connectify
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween

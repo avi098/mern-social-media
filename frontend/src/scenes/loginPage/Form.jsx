@@ -228,6 +228,7 @@ const Form = () => {
               name="password"
               error={Boolean(touched.password) && Boolean(errors.password)}
               helperText={touched.password && errors.password}
+              placeholder="enter the password minimum 10 characters"
               sx={{ gridColumn: "span 4" }}
             />
           </Box>
